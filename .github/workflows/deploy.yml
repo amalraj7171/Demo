@@ -1,1 +1,9 @@
-
+name: workflowCICD
+on: push
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build the stack
+        run:  git clone https://github.com/amalraj7171/workflowCICD.git && cd /home/ec2-user/actions-runner/_work//Demo && docker-compose up -d
