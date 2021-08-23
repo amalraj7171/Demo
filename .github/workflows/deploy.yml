@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-        run:  git clone https://github.com/amalraj7171/Demo.git && cd /home/ec2-user/actions-runner/_work//Demo && docker-compose up -d
+        run:  git clone https://github.com/amalraj7171/Demo.git && cd /home/ec2-user/actions-runner/_work//Demo/ && docker-compose up -d
