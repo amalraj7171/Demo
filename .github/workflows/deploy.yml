@@ -1,4 +1,4 @@
-name: workflowCICD
+name: Demo
 on: push
 jobs:
   test:
